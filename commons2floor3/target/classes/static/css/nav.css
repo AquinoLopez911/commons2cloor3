@@ -1,0 +1,104 @@
+* {
+    font-family: 'Roboto' 'Georgia', 'Times New Roman', Times, serif;
+}
+
+header {
+    background-color: rgb(1, 1, 58);
+}
+
+h1 {
+    color: white;
+    font-family: 'Oswald';
+    margin-top: 0;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Oswald';
+    font-size: 20px; 
+}
+
+a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+.container {
+    text-align: center;
+}
+
+nav {
+    background: rgb(2, 2, 179);
+    border-radius: 15px;
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    list-style: none;
+    padding: 10px;
+    color: white;
+}
+
+#home {
+    border-bottom: 5px solid rgb(139, 1, 1);
+}
+
+#meet {
+    border-bottom: 5px solid rgb(139, 1, 1);
+}
+
+#gallery {
+    border-bottom: 5px solid rgb(139, 1, 1);
+}
+
+.top a:visited {
+    color: black;
+    text-decoration: none;;
+}
+
+@media (min-width: 1024px) {
+    header h1 {
+        float: left;
+    }
+
+    h1 {
+        margin: 0.50em 0;
+    }
+
+    header ul {
+        float: right;
+        padding: 0;
+    }
+
+    header li {
+        float: left;
+    }
+
+    #home {
+        border-right: 5px solid rgb(139, 1, 1);
+        border-bottom: none;
+    }
+    
+    #meet {
+        border-right: 5px solid rgb(139, 1, 1);
+        border-bottom: none;
+    }
+
+    #gallery {
+        border-right: 5px solid rgb(139, 1, 1);
+        border-bottom: none;
+    }
+
+
+}

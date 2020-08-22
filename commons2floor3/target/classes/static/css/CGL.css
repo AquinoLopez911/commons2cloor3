@@ -1,0 +1,127 @@
+#title {
+    color: black;
+    text-align: center;
+}
+
+.mobile {
+    width: 75%;
+    text-align: center;
+    border: 10px solid rgb(1, 1, 58);
+    border-radius: 15px;
+    margin: 0 auto;
+    box-shadow: 20px 20px 10px -10px gray;
+}
+
+.mobile h1 {
+    color: black;
+}
+
+.mobile h3 {
+    border: 5px solid skyblue;
+    border-radius: 15px;
+    background-color: skyblue;
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    padding: 2%;
+}
+
+.mobile img {
+    width: 65%;
+    margin: 0 auto;
+    margin-bottom: 20%;
+    border-radius: 100%;
+}
+
+.mobile a {
+    color: black;
+}
+.mobile a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+.margin {
+    margin-top: 20px;
+}
+
+
+
+
+
+@media (min-width: 768px) {
+
+    #title {
+        margin-bottom: 60px;
+    }
+
+    .tyler-hutchins {
+        width: 40%;
+        float: left;
+        margin-left: 20px;
+    }
+    .perry {
+        width: 40%;
+        float: right;
+        margin-left: 20px;
+        margin-top: 20px;
+    }
+
+    .jonah {
+        width: 40%;
+        float: left;
+        margin-left: 20px;
+        margin-top: 20px;
+    }
+
+    .lilly {
+        width: 40%;
+        float: right;
+        margin-left: 20px;
+        margin-top: 20px;
+    }
+
+    .josie {
+        width: 40%;
+        float: left;
+        margin-left: 20px;
+        margin-top: 20px;
+    }
+
+    .taylor {
+        width: 40%;
+        float: right;
+        margin-left: 20px;
+        margin-top: 20px;
+    }
+
+    .zoe {
+        width: 40%;
+        float: left;
+        margin-left: 20px;
+        margin-top: 20px;
+    }
+
+    .ryan {
+        width: 40%;
+        float: right;
+        margin-left: 20px;
+        margin-top: 20px;
+    }
+
+}
+
+@media (min-width: 1024px) {
+    .flex-container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .flex-container div {
+        width: 30%;
+    }
+
+    .zoe img {
+        width: 50%;
+    }
+}

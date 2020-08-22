@@ -1,0 +1,28 @@
+#title {
+    color: black;
+}
+
+a, 
+a:visited {
+    color: white;
+}
+
+.title {
+    text-align: center;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 10px;
+  }
+
+  table {
+      width: 80%;
+      height: 100%;
+      margin: 0 auto;
+  }
+
+  .description, h3 {
+      margin: 0 auto;
+      width: 80%;
+  }

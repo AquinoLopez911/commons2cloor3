@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+    <html xmlns:th="http://www.thymeleaf.org">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            
+            <link type="text/css" href="css/nav.css" rel="stylesheet">
+            <link type="text/css" href="css/style.css" rel="stylesheet">
+            <link type="text/css"  href="css/normalize.css" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css2?family=Jost&family=Oswald&family=Ubuntu&display=swap" rel="stylesheet">
+
+            <link href="css/RS-1.css" type="text/css" rel="stylesheet">
+            <title>CO23 RS's</title>
+        </head>
+        <body>
+                    
+            <th:block th:insert="fragments/navFragment :: nav"></th:block>
+
+            <h1 id="title">Resident Shepherds</h1>
+            <main id="main">
+		        <div class="container main clearfix">
+		                
+		            <div class="josh-rozelle card">
+		                <h1 class="card-header">Josh Rozelle</h1>
+		                <img class="card-image" src="images/josh-rozelle-profile.jpg" alt="josh-rozelle-profile-pic" id="josh">
+		                <a class="link" href="/josh_rozelle"><h3 class="link-text">Meet Josh</h3></a>
+		            </div>
+		            <div class="grace-jones card">
+		                <h1 class="card-header">Grace Jones</h1>
+		                <img class="card-image" src="images/grace-jones-profile-rs-page.png" alt="grace-jones-profile-pic" id="grace">
+		                <a class="link" href="/grace_jones"><h3 class="link-text">Meet Grace</h3></a>
+		            </div>
+		            <div class="jake-zook card">
+		                <h1 class="card-header">Jacob Zook</h1>
+		                <img class="card-image" src="images/jake-profile-pic.JPG" alt="jake-profile-pic" id="jake">
+		                <a class="link" href="/jacob_zook"><h3 class="link-text">Meet Jacob</h3></a>
+		            </div>
+		            <div class="emma-ockerman card">
+		                <h1 class="card-header">Emma Ockerman</h1>
+		                <img class="card-image" src="images/emma-ockerman-profile.JPG" alt="emma-ockerman-profile-pic" id="emma">
+		                <a class="link" href="/emma_ockerman"><h3 class="link-text">Meet Emma</h3></a>
+		            </div>
+		        </div>
+        	</main>
+        </body>
+    </html>

@@ -1,0 +1,282 @@
+* {
+    font-family: 'Roboto' 'Georgia', 'Times New Roman', Times, serif;
+}
+
+header {
+    background-color: rgb(1, 1, 58);
+}
+
+h1 {
+    color: white;
+    font-family: 'Oswald';
+    margin-top: 0;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+p {
+    font-family: 'Jost';
+}
+
+a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+.container {
+    text-align: center;
+}
+
+nav {
+    background: rgb(2, 2, 179);
+    border-radius: 15px;
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    list-style: none;
+    padding: 10px;
+    color: white;
+}
+
+
+.top a:visited {
+    color: black;
+    text-decoration: none;;
+}
+
+.intro p {
+    font-family: 'Jost';
+}
+
+.container img {
+    text-align: center;
+    width: 75%;
+}
+.intro {
+    text-align: center;
+}
+
+
+iframe {
+    width: 75%;
+    height: 30%;
+    margin: 0 auto;
+}
+
+
+/* every subject can have one class name and  */
+.about-us {
+    border: 10px solid skyblue;
+    border-radius: 15px;
+    box-shadow: 20px 20px 10px -10px gray;
+}
+
+.adventure {
+	
+    margin-top: 30px;
+    box-shadow: 20px 20px 10px -10px gray;
+}
+
+.community {
+    
+    margin-top: 30px;
+    box-shadow: 20px 20px 10px -10px gray;
+}
+
+.Fellowship {
+    
+    margin-top: 30px;
+    box-shadow: 20px 20px 10px -10px gray;
+}
+
+.serve {
+    
+    margin-top: 30px;
+    box-shadow: 20px 20px 10px -10px gray;
+}
+
+.Disciple {
+    
+    margin-top: 30px;
+    box-shadow: 20px 20px 10px -10px gray;
+
+    margin-bottom: 30px;
+}
+
+footer {
+    background-color: gray;
+    margin-bottom: 0;
+}
+
+footer .social {
+    float: left;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+footer .top {
+    float: right;
+}
+
+@media (min-width: 768px) {
+
+    .box {
+        height: 431px;
+    }
+
+    img {
+        height: 250px;
+    }
+
+    .intro h3 {
+        width: 55%;
+        float: left;
+        padding-top: 50px;
+    }
+
+    .index-iframe {
+        width: 40%;
+        float: right;
+        height: 200px;
+    }
+
+    .intro {
+        margin-top: 50px;
+        margin-bottom: 50px;
+        background-color: white;
+        text-align: center;
+    }
+
+    .prayer {
+        width: 45%;
+        float: left;
+    }
+
+    .adventure {
+        width: 45%;
+        float: right;
+        margin-top: 0;
+    }
+
+    .community {
+        width: 45%;
+        float: left;
+    }
+
+    .Fellowship {
+        width: 45%;
+        float: right;
+    }
+
+    .serve {
+        width: 45%;
+        float: left;
+    }
+
+    .Disciple {
+        width: 45%;
+        float: right;
+    }
+
+}
+
+@media (min-width: 1024px) {
+    header h1 {
+        float: left;
+    }
+
+    header ul {
+        float: right;
+        padding: 0;
+    }
+
+    header li {
+        float: left;
+    }
+
+    #home {
+        border-right: 5px solid rgb(139, 1, 1);
+        border-bottom: none;
+    }
+    
+    #meet {
+        border-right: 5px solid rgb(139, 1, 1);
+        border-bottom: none;
+    }
+
+    .intro {
+        height: 400px; 
+    }
+
+    .intro iframe {
+        height: 80%;
+    }
+
+    main {
+        position: relative;
+        height: 1000px;
+    }
+
+    .prayer {
+        position: absolute;
+        width: 30%;
+        top: 10px;
+        left: 0;
+    }
+
+    .adventure {
+        position: absolute;
+        width: 30%;
+        top: 10px;
+        margin-left: 35%;
+    }
+
+    .community {
+        position: absolute;
+        width: 30%;
+        top: 10px;
+        right: 0;
+        margin-top: 0;
+    }
+
+    .Fellowship {
+        position: absolute;
+        width: 30%;
+        bottom: 0;
+        left: 0;
+    }
+
+    .serve {
+        position: absolute;
+        width: 30%;
+        margin-left: 35%;
+        bottom: 0;
+    }
+
+    .Disciple {
+        position: absolute;
+        width: 30%;
+        bottom: 0;
+        right: 0;
+        margin-bottom: 0;
+    }
+
+    .footer {
+        margin-top: 30px;
+    }
+
+
+}

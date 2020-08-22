@@ -1,0 +1,71 @@
+<!DOCTYPE >
+    <html xmlns:th="http://www.thymeleaf.org">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+        	
+            <link type="text/css" href="css/nav.css" rel="stylesheet">
+            <link type="text/css" href="css/style.css" rel="stylesheet">
+            <link type="text/css" href="css/normalize.css" rel="stylesheet">
+            <link type="text/css" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+            <link type="text/css" href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+            <link type="text/css" href="https://fonts.googleapis.com/css2?family=Jost&family=Oswald&family=Ubuntu&display=swap" rel="stylesheet">
+            
+            <title>CO23</title>
+        </head>
+        <body>
+            
+            <th:block th:insert="fragments/navFragment :: nav"></th:block>
+            
+            <div class="intro clearfix">
+                <iframe src="https://www.youtube.com/embed/hM4RS3RMTmE" class="index-iframe"></iframe>
+                <h3>Hi, welcome to the Commons 2 Floor 3 website, Im super glad you are here, there's probably a ton of questions you have about this site, play the video and i'll explain all of this the best I can</h3>
+            </div>
+        	<div class="container clearfix main">
+            <main>
+                <div class="prayer about-us box">
+                    <h2>Prayer</h2>
+                    <img src="images/prayer.jpg" alt="prayer-pic" />
+                    <p>Prayer is at the heart of everything we do<br>
+                        "Nothing of eternal significance happens apart from prayer" - Jerry Falwell
+                    </p>
+                </div>
+                <div class="adventure about-us box">
+                    <h2>Adventure</h2>
+                    <img src="images/adventure.jpg" alt="adventure-pic" />
+                    <p>Make memories with your brothers and sisters that will last a lifetime</p>
+                </div>
+                <div class="community about-us box">
+                    <h2>Community</h2>
+                    <img src="images/community.jpg" alt="community-pic" />
+                    <p>Live in a Christ Centered Community, where we will all help each other grow</p>
+                </div>
+                <div class="Fellowship about-us box">
+                    <h2>Fellowship</h2>
+                    <img src="images/Teamwork.jpg" alt="Teamwork" />
+                    <p>We are more than just a group of friends, we help each other, no matter what</p>
+                </div>
+                <div class="serve about-us box">
+                    <h2>Serve</h2>
+                    <img src="images/service.jpg" alt="serve" />
+                    <p>We are here to serve each other, the community, the church and the world</p>
+                </div>
+                <div class="Disciple about-us box">
+                    <h2>Worship</h2>
+                    <img src="images/disciple.jpg" alt="disciple" />
+                    <p>Our ultimate goal is to lift high the name of Jesus and love him with all our heart, soul, mind and strength</p>
+                </div>
+            </main>
+        </div>
+            <footer class="clearfix footer">
+                <div class="social">
+                    <p>Social media links (at some point)<br>
+                    And other footer information</p>
+                </div>
+                <div class="top">
+                    <p><a href="#home" id="back-to-top"><em>back to the top</em></a></p>
+                    <p><a href="/goof">Click this link</a></p>
+                </div>
+            </footer>
+        </body>
+    </html>

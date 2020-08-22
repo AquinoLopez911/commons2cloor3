@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+    <html xmlns:th="http://www.thymeleaf.org">
+        <head>
+            <title>Photo Gallery</title>
+            <link type="text/css" href="js/lightbox/lightbox.css" rel="stylesheet">
+            <link type="text/css" href="css/pg.css" rel="stylesheet"> 
+            <link type="text/css" href="css/normalize.css" rel="stylesheet">
+            <link type="text/css" href="css/nav.css" rel="stylesheet">
+            <link type="text/css" href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+        </head>
+        <body>
+            
+            <th:block th:insert="fragments/navFragment :: nav"></th:block>
+            
+            <div class="wrapper">
+                <form>
+	                <input type="text" placeholder="Search for a photo" id="search" name="filter">
+	                <button class="button">Post a picture to the Gallery</button>
+                </form>
+            <div class="img-row top">
+                <div class="img-container"><a href="gallery/test.jpg" class="a" data-lightbox="roadtrip" data-title="Died my hair blonde, quite the experience"><img src="gallery/test.jpg" class="glry-img" id="img-1"></a></div>
+                
+                <div class="img-container"><a href="gallery/test2.jpg" class="a" data-lightbox="roadtrip" data-title="Ultimate Frissbee is not something to be taken lightly"><img src="gallery/test2.jpg" class="glry-img"></a></div>
+                
+                <div class="img-container"><a href="gallery/test3.jpg" class="a" data-lightbox="roadtrip" data-title="The boys take a final picture before having to leave because of Covid-19"><img src="gallery/test3.jpg" class="glry-img"></a></div>
+                
+                <div class="img-container"><a href="gallery/test4.jpg" class="a" data-lightbox="roadtrip" data-title="Roller skating, its apparently a great date idea, you have to be good at roller skating for it to work, I am not"><img src="gallery/test4.jpg" class="glry-img"></a></div>
+            </div>
+            <div class="img-row mid">
+                <div class="img-container"><a href="gallery/test5.jpg" class="a" data-lightbox="roadtrip" data-title="You might have heard of John from Campus Campus Community, that is me"><img src="gallery/test5.jpg" class="glry-img"></a></div>
+                
+                <div class="img-container"><a href="gallery/test6.PNG" class="a" data-lightbox="roadtrip" data-title="Pika Preach. (I dont even like Pokemon)"><img src="gallery/test6.PNG" class="glry-img"></a></div>
+                
+                <div class="img-container"><a href="gallery/test7.jpg" class="a" data-lightbox="roadtrip" data-title="CFAW"><img src="gallery/test7.jpg" class="glry-img"></a></div>
+                
+                <div class="img-container"><a href="gallery/test8.JPG" class="a" data-lightbox="roadtrip" data-title="'Is there any pleasure on Earth as great as a circle of Christian Friends by a good fire'"><img src="gallery/test8.JPG" class="glry-img"></a></div>
+            </div>
+            <div class="img-row btm">
+                <div class="img-container"><a href="gallery/test9.jpg" class="a" data-lightbox="roadtrip" data-title="Move-in day, Tons of fun"><img src="gallery/test9.jpg" class="glry-img"></a></div>
+                
+                <div class="img-container"><a href="gallery/test10.JPG" class="a" data-lightbox="roadtrip" data-title="My favorite guitarist and childhood crush, Tori Kelly"><img src="gallery/test10.JPG" class="glry-img"></a></div>
+                
+                <div class="img-container"><a href="gallery/test11.jpg" class="a" data-lightbox="roadtrip" data-title="I had to put food up here at some point, can you spot the huge mistake in this cooking?"><img src="gallery/test11.jpg" class="glry-img"></a></div>
+                
+                <div class="img-container"><a href="gallery/test12.jpg" class="a" data-lightbox="roadtrip" data-title="I'm a huge Lord Of The Rings fan, this is probably one of my favorite quotes"><img src="gallery/test12.jpg" class="glry-img"></a></div>
+            </div>
+        </div>
+        <script src="js/lightbox/lightbox-plus-jquery.js"></script>
+        <script src="js/photo-gallery.js"></script>
+        </body>
+    </html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+    <html xmlns:th="http://www.thymeleaf.org">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            
+            <link type="text/css" href="css/nav.css" rel="stylesheet">
+            <link type="text/css" href="css/style.css" rel="stylesheet">
+            <link type="text/css" href="css/normalize.css" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css2?family=Jost&family=Oswald&family=Ubuntu&display=swap" rel="stylesheet">
+            
+            <link type="text/css" href="css/profile.css" rel="stylesheet">
+            
+            <script src="js/goof.js"></script>
+            
+            <title>CO23 goof</title>
+        </head>
+        <body>
+        
+            <th:block th:insert="fragments/navFragment :: nav"></th:block>
+        
+            <div class="profile-pic">
+                <iframe src="images/gentlemens-place.mp4" style="height: 400px;"></iframe>
+                <h1 style="color: black;">I put this here for giggles, Jake Zook and Jonah Poulson are featured in this legendary video, also click the button</h1>
+            </div>
+            <button style="background-color: lightblue; text-align: center;" onclick="chat()">Click this button to have a conversation with me, cmon, you know you want to</button>
+            <div class="convo-message"></div>
+        </body>
+    </html>

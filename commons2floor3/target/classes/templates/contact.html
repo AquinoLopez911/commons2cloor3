@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+    <html xmlns:th="http://www.thymeleaf.org">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            
+            <link type="text/css" href="css/nav.css" rel="stylesheet">
+            <link type="text/css" href="css/style.css" rel="stylesheet">
+            <link type="text/css" href="css/normalize.css" rel="stylesheet">
+            <link type="text/css" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+            <link type="text/css" href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+            <link type="text/css" href="https://fonts.googleapis.com/css2?family=Jost&family=Oswald&family=Ubuntu&display=swap" rel="stylesheet">
+
+            <link href="css/contact.css" type="text/css" rel="stylesheet">
+            
+            <title>CO23 Contact</title>
+        </head>
+        <body>
+            
+            <th:block th:insert="fragments/navFragment :: nav"></th:block>
+            
+                <div class="title">
+                <h1 id="title">Contact</h1>
+                </div>
+                <div class="table" style="overflow-x:auto;">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Position</th>
+                                <th>Email</th>
+                                <th>Phone</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>David Walker</td>
+                                <td>Resident Assistant</td>
+                                <td>dgwalker1@liberty.edu</td>
+                                <td>818-746-5947</td>
+                            </tr>
+                            <tr>
+                                <td>Harrison Newman</td>
+                                <td>Resident Assistant</td>
+                                <td>hsnewman@liberty.edu</td>
+                                <td>757-779-2383</td>
+                            </tr>
+                            <tr>
+                                <td>Josh Rozelle</td>
+                                <td>Resident Shepherd</td>
+                                <td>jrozelle@liberty.edu</td>
+                                <td>540-454-0844</td>
+                            </tr>
+                            <tr>
+                                <td>Jacob Zook</td>
+                                <td>Resident Shepherd</td>
+                                <td>jdzook@liberty.edu</td>
+                                <td>717-517-4418</td>
+                            </tr>
+                            <tr>
+                                <td>Jonah Poulson</td>
+                                <td>Community Group Leader/Website Developer</td>
+                                <td>jonahpoulson@gmail.com</td>
+                                <td>703-909-1650</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <br><br>
+                <h3 class="description">Feel free to contact us for anything, If you have questions about administrative things please contact a Resident Assistant. If you have questions about spiritual life/community on the hall please contact a Resident Shepherd. And Lastly if you have Questions about the website please contact Jonah Poulson</h3>
+        </body>
+    </html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+  	<head>
+	    <title>Registration</title>
+	    
+	    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	    
+	    <link type="text/css" href="js/lightbox/lightbox.css" rel="stylesheet">
+	    <link type="text/css" href="css/pg.css" rel="stylesheet"> 
+	    <link type="text/css" href="css/normalize.css" rel="stylesheet">
+	    <link type="text/css" href="css/nav.css" rel="stylesheet">
+	    <link type="text/css" href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    </head>
+    <body>
+		<th:block th:insert="fragments/navFragment :: nav"></th:block>
+		<div class="container">
+			<div class="row justify-content-center">
+				<form class="col-3 align-self-center" th:action="@{/adduser}" modelAttribute="user" th:object="${user}" method="post">
+					<div class="form-group">
+						<label class="mt-5" for="name">Name</label>
+						<input type="text" class="form-control" th:field="*{name}" id="name"  placeholder="Name">
+						<div class="d-flex justify-content-left">
+						<small class="mr-5" th:if="${#fields.hasErrors('name')}" th:errors="*{name}"></small>
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="username">Username</label>
+						<input type="text" class="form-control" th:field="*{username}" id="username" placeholder="Username">
+						<div class="d-flex justify-content-left">
+						<small th:if="${#fields.hasErrors('username')}" th:errors="*{username}"></small>
+						
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="email">Email address</label>
+						<input type="email" class="form-control" th:field="*{email}" id="email" aria-describedby="emailHelp" placeholder="Enter email">
+						<div class="d-flex justify-content-left">
+						<small th:if="${#fields.hasErrors('email')}" th:errors="*{email}"></small>			    
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="password">Password</label>
+						<input type="password" class="form-control" th:field="*{password}" id="password" placeholder="Password">
+						<div class="d-flex justify-content-left">
+						<small th:if="${#fields.hasErrors('password')}" th:errors="*{password}"></small>
+						</div>
+					</div>
+					<input type="submit" class="btn btn-primary"></input>
+					<h5>Already have an account? <a class="text-warning" href="/login">login here</a></h5>
+				</form>
+			</div>
+		</div>
+	</body>
+</html>

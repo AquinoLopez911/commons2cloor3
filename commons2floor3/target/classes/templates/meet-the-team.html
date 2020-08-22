@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+    <html xmlns:th="http://www.thymeleaf.org">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            
+            <link type="text/css" href="css/nav.css" rel="stylesheet">
+            <link type="text/css" href="css/style.css" rel="stylesheet">
+            <link type="text/css" href="css/normalize.css" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css2?family=Jost&family=Oswald&family=Ubuntu&display=swap" rel="stylesheet">
+            
+            <link href="css/meet-the-team.css" type="text/css" rel="stylesheet">
+            
+            <title>CO23 Meet the Team</title>
+        </head>
+        <body>
+            
+            <th:block th:insert="fragments/navFragment :: nav"></th:block>
+            
+            <div class="container box clearfix">
+            
+                <div class="RA">
+                    <h2>Resident Assistants</h2>
+                    <a href="/RA"><img src="images/RA.png" alt="RA-pic"></a>
+                    <h3>Resident Assistants are the administrative leaders on the hall, and watch out they also lay down the law</h3>
+                </div>
+                
+                <div class="RS">
+                    <h2>Resident Shepherds</h2>
+                    <a href="/RS"><img src="images/RS.png" alt="rs-pic"></a>
+                    <h3>Resident Shepherds are the spiritual leaders on the hall, they are here to guide and lead us as a hall closer to Christ</h3>
+                </div>
+                
+                <div class="CGL">
+                    <h2>Community Group leaders</h2>
+                    <a href="/CGL"><img src="images/CGL.png" alt="cgl-pic"></a>
+                    <h3>CGL's are led by our amazing RS's and they will lead, encourage and walk along side you in your walk with Jesus Christ</h3>
+                </div>
+                
+            </div>
+        </body>
+    </html>

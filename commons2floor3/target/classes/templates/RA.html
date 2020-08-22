@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+    <html xmlns:th="http://www.thymeleaf.org">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            
+            <link type="text/css" href="css/nav.css" rel="stylesheet">
+            <link type="text/css" href="css/style.css" rel="stylesheet">
+            <link type="text/css"  href="css/normalize.css" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css2?family=Jost&family=Oswald&family=Ubuntu&display=swap" rel="stylesheet">
+
+            <link href="css/RA-1.css" type="text/css" rel="stylesheet">
+            
+            <title>CO23 RA's</title>
+        </head>
+        <body>
+            <th:block th:insert="fragments/navFragment :: nav"></th:block>
+            <h1 id="title">Resident Assistants</h1>
+            <main id="main">
+        		<div class="container clearfix">
+            		<div class="harrison-newman profile">
+                		<h1>Harrison Newman</h1>
+		                <img src="images/harrison-newman-profile-pic.jpg" alt="harrison-newman-profile-pic" id="harrison">
+		                <a class="link-text"  href="/harrison_newman"><h3>Meet Harrison</h3></a>
+		            </div>
+		            <div class="david-walker profile">
+		                <h1>David Walker</h1>
+		                <img src="images/david-walker-profile-pic.jpg" alt="david-walker-profile-pic">
+		                <a class="link-text"  href="/david_walker"><h3>Meet David</h3></a>
+		            </div>
+		            <div class="emily-clubb profile">
+		                <h1>Emily Clubb</h1>
+		                <img src="images/emily-profile.jpeg" alt="emily-clubb-profile" id="emily">
+		                <a class="link-text" href="/emily_clubb"><h3>Meet Emily</h3></a>
+		            </div>
+		        </div>
+		    </main>
+        </body>
+    </html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+    <html xmlns:th="http://www.thymeleaf.org">
+        <head>
+            <title>Photo Gallery</title>
+           	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+            
+            
+            <link type="text/css" href="js/lightbox/lightbox.css" rel="stylesheet"> 
+            <link type="text/css" href="css/pg.css" rel="stylesheet">
+            <link type="text/css" href="css/nav.css" rel="stylesheet">
+            <link type="text/css" href="css/normalize.css" rel="stylesheet">
+            
+            <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+        </head>
+        <body>
+            
+            <th:block th:insert="fragments/navFragment :: nav"></th:block>
+            
+            <div class="text-center mt-5 ">
+	        	<a  href="/postForm"><button class=" btn btn-primary">Post a photo to the Gallery</button></a>
+        	</div>
+        <script src="js/lightbox/lightbox-plus-jquery.js"></script>
+        <script src="js/photo-gallery.js"></script>
+        </body>
+    </html>
