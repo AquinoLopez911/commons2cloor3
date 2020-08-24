@@ -55,6 +55,8 @@ class PostForm extends Component {
         this.setState({fileName: imgFile.name});
     }
 
+
+
     submitPost = e => {
         e.preventDefault();
 

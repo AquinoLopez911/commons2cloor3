@@ -1,54 +1,46 @@
 import React, {Component} from 'react';
-import "./App.css";
-import "bootstrap/dist/css/bootstrap.min.css";
+import {BrowserRouter as Router, Route} from "react-router-dom";
+import $ from 'jquery';
+import Popper from 'popper.js';
 
-import Nav from "./components/nav/nav";
+//Components
+import ReactNav from "./components/nav/reactNav";
+import Home from './components/home/home';
 import PostForm from "./components/postForm/postForm";
 import Post from "./components/post/post";
-import axios from "axios";
+import Dashboard from './components/dashboard/dashboard';
 
 
+import 'bootstrap/dist/js/bootstrap.bundle.min';
+import "bootstrap/dist/css/bootstrap.min.css";
+import "./App.css";
+import "./css/normalize.css";
+import "./css/style.css";
+import Switch from 'react-bootstrap/esm/Switch';
 
- 
+
 
 class App extends Component {
-
 
   constructor(props) {
     super();
     this.state = {
-        posts : []
+        
     }
-  }
-
-
-  componentDidMount() {
-    axios.get("http://localhost:3000/api/v1/all/posts")
-      .then(res => {
-          this.setState({posts: res.data})
-          console.log(res.data)
-        } 
-      )
-      .catch(err => console.log(err));
-
-  }
-
-  handelPosts = (newPosts) => {
-    this.setState({posts : newPosts});
   }
 
   render() {
     return (
       <div className="App">
-        <Nav />
-        <PostForm handelPosts={this.handelPosts}/>
-        {
-          this.state.posts.map( post =>
-              <div key={post.postId} className="bg-warning">
-                <Post s3Key={post.s3ObjectKey} />
-              </div>
-            )
-        }
+        <Router>
+          {/* nav bar */}
+          <ReactNav />
+          {/* main content */}
+          <Switch>
+            <Route exact={true} path="/" component={Home}/>
+            <Route exact={true} path="/dashboard" component={Dashboard}/>
+          </Switch>
+        </Router>
       </div>
     );
     }

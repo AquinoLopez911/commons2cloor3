@@ -64,13 +64,40 @@ public class C2F3Controller {
 		String hi = "all good";
 		return ResponseEntity.ok().body(hi);
 	}
-
-
-
-
 	
 	
-
+	
+	@ResponseBody
+	@GetMapping("/api/v1/all/posts")
+	public List<Post> retriveAllPosts() {
+		
+		return postService.allPosts();
+		
+	}
+	
+	
+	
+	//return all posts sorted by newest first
+	@ResponseBody
+	@GetMapping("/api/v2/all/posts")
+	public List<Post> retrivePostsFiLo() {
+		
+		return postService.allPostsByDate();
+		
+	}
+	
+	@ResponseBody
+	@GetMapping("/api/v1/download/post/{s3ObjectKey}")
+	public byte[] downloadImgWithKey(@PathVariable("s3ObjectKey") String s3ObjectKey) {
+		
+		System.out.println(s3ObjectKey);
+		
+		return s3Service.download(s3ObjectKey);
+	}
+	
+	
+	
+	
 	
 	@ResponseBody
 	@PostMapping(
@@ -84,11 +111,6 @@ public class C2F3Controller {
 		return postService.uploadPost(post.getAuthor(), post.getCaption(), post.getS3ObjectKey());
 		
 	}
-	
-	
-	
-	
-	
 	
 	@ResponseBody
 	@PostMapping(
@@ -123,7 +145,7 @@ public class C2F3Controller {
 		try {
 			//user.setUserProfileImgLink(fileName);
 			s3Service.save(bucketName, s3ObjectKey, Optional.of(metadata), file.getInputStream());
-			List<Post> allPosts = postService.allPosts(); 
+			List<Post> allPosts = postService.allPostsByDate(); 
 			
 			return ResponseEntity.ok(allPosts);
 		}
@@ -135,23 +157,22 @@ public class C2F3Controller {
 	}//end uploadUserProfileImg
 	
 	
+
 	
-	@ResponseBody
-	@GetMapping("/api/v1/all/posts")
-	public List<Post> retriveAllPosts() {
-		
-		return postService.allPosts();
-		
-	}
 	
-	@ResponseBody
-	@GetMapping("/api/v1/download/post/{s3ObjectKey}")
-	public byte[] downloadImgWithKey(@PathVariable("s3ObjectKey") String s3ObjectKey) {
-		
-		System.out.println(s3ObjectKey);
-		
-		return s3Service.download(s3ObjectKey);
-	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 	

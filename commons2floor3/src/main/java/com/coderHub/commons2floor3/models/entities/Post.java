@@ -1,9 +1,19 @@
 package com.coderHub.commons2floor3.models.entities;
 
+//import java.sql.Date;
+
+import java.util.Date;
+
+import java.sql.Timestamp;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
+
+import org.hibernate.annotations.CreationTimestamp;
 
 @Table(name = "post")
 @Entity
@@ -17,8 +27,13 @@ public class Post {
 	
 	private String caption;
 	
+	@CreationTimestamp
+	private Timestamp createdAt;
+	
 //	S3 bucket key
 	private String s3ObjectKey;
+	
+	
 
 	
 	public Post() {
@@ -44,6 +59,10 @@ public class Post {
 		return caption;
 	}
 
+	public Date getCreatedAt() {
+		return createdAt;
+	}
+
 	public String getS3ObjectKey() {
 		return s3ObjectKey;
 	}
@@ -58,6 +77,10 @@ public class Post {
 
 	public void setCaption(String caption) {
 		this.caption = caption;
+	}
+	
+	public void setCreatedAt(Timestamp createdAt) {
+		this.createdAt = createdAt;
 	}
 
 	public void sets3ObjectKey(String s3ObjectKey) {
@@ -79,6 +102,9 @@ public class Post {
 		
 		return buff.toString();
 	}
+
+
+	
 	
 	
 }

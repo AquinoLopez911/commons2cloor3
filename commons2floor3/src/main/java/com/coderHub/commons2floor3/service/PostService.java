@@ -3,6 +3,7 @@ package com.coderHub.commons2floor3.service;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -52,76 +53,82 @@ public class PostService {
 	
 	
 	
-		//uploads user image to s3
-		public String uploadUserProfileImg(MultipartFile file) {
+	//uploads user image to s3
+	public String uploadUserProfileImg(MultipartFile file) {
 			
-			//CHECK
-			//if image is not empty
-			if(file.isEmpty()) {
-				throw new IllegalStateException("cannot upload empty file [ " + file.getSize() + " ] ");
-			}
+		
+		//if image is not empty
+		if(file.isEmpty()) {
+			throw new IllegalStateException("cannot upload empty file [ " + file.getSize() + " ] ");
+		}
 			
-			//verify that upload is an image
-			if(!Arrays.asList(ContentType.IMAGE_JPEG.getMimeType(),
-					ContentType.IMAGE_PNG.getMimeType(),
-					ContentType.IMAGE_GIF.getMimeType()).
-					contains(file.getContentType())) {
-				throw new IllegalStateException("file must be an image or GIF [ " + file.getName() + " ]");
-			}
-			
-			
-			//grab the metadata from file if any
-			Map<String, String> metadata = new HashMap<>();
-			metadata.put("Content-Type", file.getContentType());
-			metadata.put("Content-Length", String.valueOf(file.getSize()));
+		//verify that upload is an image
+		if(!Arrays.asList(ContentType.IMAGE_JPEG.getMimeType(),
+				ContentType.IMAGE_PNG.getMimeType(),
+				ContentType.IMAGE_GIF.getMimeType()).
+				contains(file.getContentType())) {
+			throw new IllegalStateException("file must be an image or GIF [ " + file.getName() + " ]");
+		}
 			
 			
-			String path = Bucket.PROFILE_IMAGE.getBucket();
+		//grab the metadata from file if any
+		Map<String, String> metadata = new HashMap<>();
+		metadata.put("Content-Type", file.getContentType());
+		metadata.put("Content-Length", String.valueOf(file.getSize()));
 			
 			
-//			save the img to the S3 bucket
-//			
-			try {
-				s3Serivce.save(path , file.getName(), Optional.of(metadata), file.getInputStream());
+		String path = Bucket.PROFILE_IMAGE.getBucket();
+			
+			
+//		save the img to the S3 bucket
+		try {
+			s3Serivce.save(path , file.getName(), Optional.of(metadata), file.getInputStream());
 				
-				return "Posted";
-			}
-			catch(IOException e) {
-				throw new IllegalStateException(e);
-			}
+			return "Posted";
+		}
+		catch(IOException e) {
+			throw new IllegalStateException(e);
+		}
 
-			
-			
-			
-		}//end uploadUserProfileImg()
+	}//end uploadUserProfileImg()
 		
 		
 
-		//returns all posts
-		public List<Post> allPosts() {
+	//returns all posts
+	public List<Post> allPosts() {
+					
+		List<Post> list = new ArrayList<Post>(); 
 			
+		postRepo.findAll().forEach(list :: add);
 			
-			List<Post> list = new ArrayList<Post>(); 
-			
-			postRepo.findAll().forEach(list :: add);
-			
+		return list;
+	}
+	
+	
+	//returns all posts
+		public List<Post> allPostsByDate() {
+			//empty list of Post			
+			List<Post> list = new ArrayList<Post>();
+					
+			//adding elements to list
+			postRepo.findByOrderByPostIdDesc().forEach(list::add);
+				
 			return list;
 		}
 		
 		
 
-		//
-		private Post getUserProfileIdOrThrow(String s3ObjectKey) {
+	private Post getUserProfileIdOrThrow(String s3ObjectKey) {
 			
-			List <Post> postList = new ArrayList<Post>(); 
+		List <Post> postList = new ArrayList<Post>(); 
 			
-			postRepo.findAll().forEach(postList :: add);
+		postRepo.findAll().forEach(postList :: add);
 			
-			return postList
-				.stream()
-				.filter( post -> post.getS3ObjectKey().equals(s3ObjectKey))
-				.findFirst()
-				.orElseThrow(() -> new IllegalStateException(String.format( "user profile %s not found ", s3ObjectKey )));
-		}//getUserProfileIdOrThrow
+		return postList
+			.stream()
+			.filter( post -> post.getS3ObjectKey().equals(s3ObjectKey))
+			.findFirst()
+			.orElseThrow(() -> new IllegalStateException(String.format( "user profile %s not found ", s3ObjectKey )));
+	}//getUserProfileIdOrThrow
 
 }

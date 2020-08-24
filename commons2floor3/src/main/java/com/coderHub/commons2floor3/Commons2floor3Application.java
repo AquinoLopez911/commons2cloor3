@@ -7,6 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class Commons2floor3Application {
 
 	public static void main(String[] args) {
+		
 		SpringApplication.run(Commons2floor3Application.class, args);
 	}
 

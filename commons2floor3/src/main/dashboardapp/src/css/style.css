@@ -1,0 +1,103 @@
+* {
+    font-family: 'Roboto' 'Georgia', 'Times New Roman', Times, serif;
+}
+
+
+
+header {
+    background-color: rgb(1, 1, 58);
+}
+
+h2, h3 {
+    font-family: times;
+    font-weight: 600;
+}
+
+
+p {
+    font-family: 'Jost';
+}
+
+.intro {
+    height: 60vh;
+    align-items: center;
+}
+
+.index-iframe {
+    margin-top: 5px;
+    /* height: 100% !important; */
+    height: 300px;
+    width: 100%;
+}
+
+/* every subject can have one class name and  */
+.about-us {
+    border: 10px solid skyblue;
+    border-radius: 15px;
+    box-shadow: 20px 20px 10px -10px gray;
+    box-shadow: 20px 20px 10px -10px gray;
+}
+
+.box {
+    height: 50vh;
+    width: 30vw;
+}
+
+img {
+    width: 75%;
+}
+
+
+
+@media (max-width: 687px) {
+
+    .intro {
+        
+        height: 70vh;
+        align-items: center;
+        
+    }
+
+    .sm-d-flex {
+        margin-top: 3rem;
+        margin-bottom: 0 !important;
+        flex-direction: column!important;
+    }
+
+    .box {
+        height: 70vh;
+        width: 100vw;
+        margin-bottom: 2rem;
+        ;
+    }
+
+    #bottom-row {
+        margin-top: 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    background-color: gray;
+    margin-bottom: 0;
+}
+
+footer .social {
+    float: left;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+footer .top {
+    float: right;
+}
+

@@ -1,34 +1,37 @@
 import React, {Component} from "react";
 import axios from "axios";
 
+import "./post.css";
 
 class Post extends Component {
 
     constructor(props) {
-        super();
+        super(props);
         this.state = {
-            
-        }
+            dimensions: {}
+        };
+        this.onImgLoad = this.onImgLoad.bind(this);
     }
 
-
-    componentDidMount() {
-        console.log(this.props);
+    onImgLoad = ({target:img}) => {
+        this.setState( { dimensions :{ 
+                            height:img.offsetHeight,
+                            width:img.offsetWidth
+                        }}
+                    );
     }
 
     render() {
-        return (
-            <div>
-                <div className="card">
-                    <img
-                    src={`http://localhost:3000/api/v1/download/post/${this.props.s3Key}`}
-                    // i included the profileImgLink in the new path because that will make the rerender happen when comaring the doms
-                    alt={`${this.props.s3Key} img`}
-                    />
-                    <div className="card-body">
-                        <h5 className="card-title">{this.props.s3Key}</h5>
-                        <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
+        return (            
+            <div className="col-4 m-3 card bg-warning">
+                <img
+                src={`http://localhost:3000/api/v1/download/post/${this.props.s3Key}`}
+                alt={`${this.props.s3Key} img`}
+                style={{width : 100 + "%"}}
+                />
+                <div className="card-body">
+                    <h5 className="card-title">{this.props._post.author}</h5>
+                    <p className="card-text">{this.props._post.caption}.</p>
                 </div>
             </div>
         );
