@@ -1,4 +1,5 @@
 import React from 'react';
+import "./../../css/style.css";
 
 
 function Home() {
@@ -10,7 +11,7 @@ function Home() {
                 <h3 className="mt-5">Hi, welcome to the Commons 2 Floor 3 website, Im super glad you are here, there's probably a ton of questions you have about this site, play the video and i'll explain all of this the best I can</h3>
                 </div>
                 <div className="col-lg-5 col-md-7 col-sm-12 align-content-center">
-                <iframe src="https://www.youtube.com/embed/hM4RS3RMTmE" class="index-iframe"></iframe>
+                <iframe src="https://www.youtube.com/embed/hM4RS3RMTmE" className="index-iframe" title="explain"></iframe>
                 </div>
             </div>
         	<div className="row container-fluid mt-5 ml-0 p-0">

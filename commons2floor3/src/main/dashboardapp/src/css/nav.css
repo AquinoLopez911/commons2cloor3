@@ -6,8 +6,8 @@ header {
     background-color: rgb(1, 1, 58);
 }
 
-h1 {
-    color: white;
+nav h1 {
+    color : white !important;
     font-family: 'Oswald';
     margin-top: 0;
 }
@@ -60,45 +60,4 @@ li {
 
 #gallery {
     border-bottom: 5px solid rgb(139, 1, 1);
-}
-
-.top a:visited {
-    color: black;
-    text-decoration: none;;
-}
-
-@media (min-width: 1024px) {
-    header h1 {
-        float: left;
-    }
-
-    h1 {
-        margin: 0.50em 0;
-    }
-
-    header ul {
-        float: right;
-        padding: 0;
-    }
-
-    header li {
-        float: left;
-    }
-
-    #home {
-        border-right: 5px solid rgb(139, 1, 1);
-        border-bottom: none;
-    }
-    
-    #meet {
-        border-right: 5px solid rgb(139, 1, 1);
-        border-bottom: none;
-    }
-
-    #gallery {
-        border-right: 5px solid rgb(139, 1, 1);
-        border-bottom: none;
-    }
-
-
 }

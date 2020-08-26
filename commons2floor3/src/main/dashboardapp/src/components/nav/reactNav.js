@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import {Link, Router} from "react-router-dom";
-import {Navbar, Nav, NavDropdown} from 'react-bootstrap';
+import {Link} from "react-router-dom";
+import {Navbar, Nav} from 'react-bootstrap';
     
 import "./nav.css";
 
@@ -10,41 +10,34 @@ import "./nav.css";
 class ReactNav extends Component {
     constructor(props) {
         super(props);
+        this.state = {};
       }
       render() {
         return (
-            <Navbar expand="md" variant="dark">
-            <Navbar.Brand href="/" className="text-white" ><h1>Commons2Floor3</h1></Navbar.Brand>
+            <Navbar expand="md" varient="dark" >
+            <Navbar.Brand href="/"><h1 className="text-white">Commons2Floor3</h1></Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="ml-auto">
                 <li className="nav-item active">
-                    <Nav.Link className="nav-link" >
-                        <Link to="/">
-                            Home
-                        </Link>
-                    </Nav.Link>
+                    <Link className="nav-link" to="/">
+                        Home
+                    </Link>
                 </li>
                 <li className="nav-item">
-                    <Nav.Link className="nav-link">
-                        <Link to="/team">
-                            Meet the team
-                        </Link>
-                    </Nav.Link>
+                    <Link className="nav-link" to="/teams">
+                        Meet the team
+                    </Link>
                 </li>
                 <li className="nav-item">
-                    <Nav.Link className="nav-link" >
-                        <Link to="/dashboard">
-                            Dashboard
-                        </Link>
-                    </Nav.Link>
+                    <Link className="nav-link" to="/dashboard">
+                        Dashboard
+                    </Link>
                 </li>
                 <li className="nav-item ">
-                    <Nav.Link className="nav-link">
-                        <Link to="/contact">
-                            Contact
-                        </Link>
-                    </Nav.Link>
+                    <Link className="nav-link" to="/contact">
+                        Contact
+                    </Link>
                 </li>
               </Nav>
             </Navbar.Collapse>

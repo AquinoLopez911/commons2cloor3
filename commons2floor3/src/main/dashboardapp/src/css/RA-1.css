@@ -4,7 +4,6 @@
 }
 
 .profile {
-    width: 75%;
     text-align: center;
     border: 10px solid rgb(1, 1, 58);
     border-radius: 15px;
@@ -12,97 +11,40 @@
     box-shadow: 20px 20px 10px -10px gray;
 }
 
-.profile h1 {
-    color: black;
-}
 
 .profile h3 {
     border: 5px solid skyblue;
     border-radius: 15px;
     background-color: skyblue;
-    width: 50%;
-    margin: 10px auto;
+    margin: 10px;
     padding: 2%;
 }
 
-.link-text {
-    color: #000;
-}
-
-.link-text:visited {
-    text-decoration: none;
-    color: black;
-}
 
 .profile img {
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
-    margin-bottom: 20%;
     border-radius: 100%;
 }
 
-
-/*BOOTSTRAP TO SIMPLIFY CSS  */
-
-@media (min-width: 768px) {
-
-    #title {
-        margin-bottom: 60px;
-    }
-
-    .harrison-newman {
-        width: 40%;
-        float: left;
-        margin-left: 20px;
-    }
-
-    .david-walker {
-        width: 40%;
-        float: right;
-        margin-left: 20px;
-        margin-top: 0;
-    }
-
-    .emily-clubb {
-        width: 40%;
-        float: left;
-        margin-left: 20px;
-        margin-top: 20px;
-    }
-
-
+.long-photo {
+    height: 65%;
 }
 
-@media (min-width: 1024px) {
+
+@media (min-width : 1300px) {
 
 
-        #main {
-            position: relative;
-            height: 1100px;
-        }
-    
-        .harrison-newman {
-            position: absolute;
-            top: 0;
-            left: 5%;
-            width: 32%;
-        }
-    
-        .david-walker {
-            width: 32%;
-            position: absolute;
-            top: 0;
-            right: 5%;
-        }
-
-        .emily-clubb {
-            width: 32%;
-            position: absolute;
-            bottom: 0;
-            left: 5%;
-        }
-
-        #emily {
-            width: 50%;
-        }
+    .long-photo {
+        height: 65%;
+    }
 }
+
+@media (max-width : 388px) {
+
+    .long-photo {
+        height: 30%;
+    }
+}
+
+

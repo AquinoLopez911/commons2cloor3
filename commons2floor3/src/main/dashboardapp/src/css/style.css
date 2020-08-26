@@ -3,7 +3,6 @@
 }
 
 
-
 header {
     background-color: rgb(1, 1, 58);
 }
@@ -46,40 +45,6 @@ p {
 img {
     width: 75%;
 }
-
-
-
-@media (max-width: 687px) {
-
-    .intro {
-        
-        height: 70vh;
-        align-items: center;
-        
-    }
-
-    .sm-d-flex {
-        margin-top: 3rem;
-        margin-bottom: 0 !important;
-        flex-direction: column!important;
-    }
-
-    .box {
-        height: 70vh;
-        width: 100vw;
-        margin-bottom: 2rem;
-        ;
-    }
-
-    #bottom-row {
-        margin-top: 0;
-    }
-}
-
-
-
-
-
 
 
 
