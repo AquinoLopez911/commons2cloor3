@@ -19,17 +19,23 @@ function Home() {
                     <div className="col d-flex sm-d-flex justify-content-around mb-5 mt-5 p-0">
                         <div className=" about-us box ">
                             <h2>Prayer</h2>
-                            <img src="images/prayer.jpg" alt="prayer-pic" />
+                            <div className="img-container">
+                                <img src="images/prayer.jpg" alt="prayer-pic" />
+                            </div>
                             <p className="p-1">Prayer is at the heart of everything we do Nothing of eternal significance happens apart from prayer" - Jerry Falwell</p>
                         </div>
                         <div className=" about-us box">
                             <h2>Adventure</h2>
+                            <div className="img-container p-3">
                             <img src="images/adventure.jpg" alt="adventure-pic" />
+                            </div>
                             <p className="p-1">Make memories with your brothers and sisters that will last a lifetime</p>
                         </div>
                         <div className=" about-us box">
                             <h2>Community</h2>
+                            <div className="img-container">
                             <img src="images/community.jpg" alt="community-pic" />
+                            </div>
                             <p className="p-1"> Live in a Christ Centered Community, where we will all help each other grow</p>
                         </div>
                     </div>
@@ -37,17 +43,23 @@ function Home() {
                     <div id="bottom-row" className="col d-flex sm-d-flex justify-content-around p-0">
                         <div className=" about-us box">
                             <h2>Fellowship</h2>
-                            <img src="images/Teamwork.jpg" alt="Teamwork" />
+                            <div class="img-container">
+                                <img src="images/Teamwork.jpg" alt="Teamwork" />
+                            </div>
                             <p className="p-1">We are more than just a group of friends, we help each other, no matter what</p>
                         </div>
                         <div className=" about-us box">
                             <h2>Serve</h2>
-                            <img src="images/service.jpg" alt="serve" />
+                            <div className="img-container">
+                                <img src="images/service.jpg" alt="serve" />
+                            </div>
                             <p className="p-1">We are here to serve each other, the community, the church and the world</p>
                         </div>
                         <div className=" about-us box">
                             <h2>Worship</h2>
-                            <img src="images/disciple.jpg" alt="disciple" />
+                            <div className="img-container">
+                                <img src="images/disciple.jpg" alt="disciple" />
+                            </div>
                             <p className="p-1">Our ultimate goal is to lift high the name of Jesus and love him with all our heart, soul, mind and strength</p>
                         </div>
                     </div>

@@ -1,0 +1,37 @@
+{
+    "teamName" : "Resident Assistants",
+    "members" : [
+        {
+            "member_id" : 1,
+            "fName" : "David",
+            "name" : "David Walker",
+            "img" : "/images/david-walker-profile-pic.jpg",
+            "class" : "front-img",
+            "intro" : "Hello everyone! My names David and I get to serve as one of your RAs for this year! I’m from Los Angeles, I’m a fan of country music, i enjoy watching sports and I love to read and work out!🤙🏿 I’ll be a junior in the Fall and I’m double majoring in Pastoral Leadership and Business Administration.",
+            "backImg" : "/images/david-walker-about.JPG",
+            "description" : "-I had grown up going to church and in a Christian home but all that meant for me was that I had a lot head knowledge about God but not really any heart change in me. I could explain all the verses about Gods love but I didn’t know what it meant our felt like. The majority of my childhood growing up was filled with sports and school, and my relationship with God came second, -I came to faith during the summer of my sophomore year of high school at a church camp after hearing a sermon preached and it blew my mind when I started to understand that the God of the universe wants to have a relationship with me but my sin is in the way. I accepted Christ right there and then my priorities changed as I started to live for him. -It wasn’t until my senior year when I had the opportunity to play football in college that God got a hold of my life and I instead finally surrendered to him to follow the call of vocational ministry! Then from a crazy turn of events, I took a leap of faith and applied to Liberty and it turned out to be one of the best decisions I made because this is such a special place with phenomenal people! I’ve been an RA for the past 3 years and I’d have to say that the craziest thing that I’ve seen happened in my first year..ask me sometime and I’d be glad to share!"
+        },
+        {
+            "member_id" : 2,
+            "fName" : "Emily",
+            "name" : "Emily Clubb",
+            "img" : "/images/emily-profile.jpeg",
+            "class" : "long-photo front-img",
+            "intro" : "HELLO! My name is Emily Clubb and I am going to be one of your RAs! I lived on 2-3 last year as a CGL so I am a returner to the hall (which I think is pretty neat!) I am from Columbus, Ohio where I live with my parents and two foster siblings while my older sister lives in South Carolina. I love being outside and exploring nature, especially if it involves water (BIG lake girl). I love earrings & nail polish (probably a little too much). I love to listen to music in the car as well as have crazy dance parties. My favorite food is probably cinnamon rolls or a bagel paired with an iced coffee. One cool fact about me is that I am a first generation American and have dual citizenship with the US and Canada! Many people tell me I’m intimidating but I promise I’m really just a goofball once you get to know me and I love hugs!! If you are looking for me at Liberty, you will most likely find me in the library. I pretty much live there. Can’t wait to meet everyone!!",
+            "backImg" : "/images/emily-about-2.jpeg",
+            "description" : "-I had grown up going to church and in a Christian home but all that meant for me was that I had a lot head knowledge about God but not really any heart change in me. I could explain all the verses about Gods love but I didn’t know what it meant our felt like. The majority of my childhood growing up was filled with sports and school, and my relationship with God came second, -I came to faith during the summer of my sophomore year of high school at a church camp after hearing a sermon preached and it blew my mind when I started to understand that the God of the universe wants to have a relationship with me but my sin is in the way. I accepted Christ right there and then my priorities changed as I started to live for him. -It wasn’t until my senior year when I had the opportunity to play football in college that God got a hold of my life and I instead finally surrendered to him to follow the call of vocational ministry! Then from a crazy turn of events, I took a leap of faith and applied to Liberty and it turned out to be one of the best decisions I made because this is such a special place with phenomenal people! I’ve been an RA for the past 3 years and I’d have to say that the craziest thing that I’ve seen happened in my first year..ask me sometime and I’d be glad to share!"
+        },
+        {
+            "member_id" : 3,
+            "fName" : "harrison",
+            "name" : "Harrison Newman",
+            "img" : "/images/harrison-newman-profile-pic.jpg",
+            "intro" : "My name is Harrison and I'm in my fourth year at Liberty. I am a Commercial/Corporate Aeronautics Major with a minor in Aviation Safety. I hope to one day become an airline pilot. I am a huge baseball fan and love the New York Yankees, I love to do outdoor activities like going to LMGC or playing beach volleyball. I am excited to see how god moves on this hall this year!",
+            "backImg" : "/images/harrison-newman-about-pic.jpg",
+            "description" : "I became a Christian when I was a freshman in high school. Throughout middle school I was part of a friend group that was super exclusive and very two faced. I was super nice to your face and would only get to know people on a surface level while when I was only with my “friends” we thought we were better than others. When I got to high school, I began to feel bad about mistreating people and my older sister invited me to a YoungLife event. I continued to go to YoungLife and at a weekend camp, I heard the gospel in a new light and gave my life to Christ. From that point on, I began to change the way I acted and treated people, through being mentored by a girl at my church. My mentor taught me how to love others and how to live as a woman of God. My friends noticed how I was changing and completely ghosted me. I went through a time where I had no real friends so I started to get plugged into a youth group and serving at my church and into YoungLife at my school and found true fellowship. Since becoming a Christian, I have become a huge advocate for inclusion because I know what it’s like to exclude people as well as be the one with no friends. Neither are good feelings. In the last five and a half years of being a Christian, I have grown in my faith tremendously as well as made mistakes (ask me about them yikes) that forced me to learn I need to constantly be in pursuit of becoming more like Christ. I am super excited to continue to grow this year as an RA and hopefully use my testimony and lessons learned to showcase Christ on our hall and to help inspire others to lean into God."
+        
+        }
+    ]
+}
+
+                    

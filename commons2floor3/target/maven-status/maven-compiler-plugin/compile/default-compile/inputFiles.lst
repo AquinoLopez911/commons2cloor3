@@ -1,7 +1,9 @@
-/Users/anthonylopez-aquino/Documents/CODE/TheCOLONYFreeLancing/Jonah_Poulson/commons2floor3/src/main/java/com/coderHub/commons2floor3/repository/UserRepository.java
-/Users/anthonylopez-aquino/Documents/CODE/TheCOLONYFreeLancing/Jonah_Poulson/commons2floor3/src/main/java/com/coderHub/commons2floor3/entities/User.java
-/Users/anthonylopez-aquino/Documents/CODE/TheCOLONYFreeLancing/Jonah_Poulson/commons2floor3/src/main/java/com/coderHub/commons2floor3/controller/C2F3Controller.java
-/Users/anthonylopez-aquino/Documents/CODE/TheCOLONYFreeLancing/Jonah_Poulson/commons2floor3/src/main/java/com/coderHub/commons2floor3/configuration/WebSecurityConfig.java
-/Users/anthonylopez-aquino/Documents/CODE/TheCOLONYFreeLancing/Jonah_Poulson/commons2floor3/src/main/java/com/coderHub/commons2floor3/models/User.java
-/Users/anthonylopez-aquino/Documents/CODE/TheCOLONYFreeLancing/Jonah_Poulson/commons2floor3/src/main/java/com/coderHub/commons2floor3/service/UserService.java
-/Users/anthonylopez-aquino/Documents/CODE/TheCOLONYFreeLancing/Jonah_Poulson/commons2floor3/src/main/java/com/coderHub/commons2floor3/Commons2floor3Application.java
+/Users/anthonylopez-aquino/git/commons2floor3/commons2floor3/src/main/java/com/coderHub/commons2floor3/controller/C2F3Controller.java
+/Users/anthonylopez-aquino/git/commons2floor3/commons2floor3/src/main/java/com/coderHub/commons2floor3/models/entities/Post.java
+/Users/anthonylopez-aquino/git/commons2floor3/commons2floor3/src/main/java/com/coderHub/commons2floor3/Commons2floor3Application.java
+/Users/anthonylopez-aquino/git/commons2floor3/commons2floor3/src/main/java/com/coderHub/commons2floor3/repository/PostRepository.java
+/Users/anthonylopez-aquino/git/commons2floor3/commons2floor3/src/main/java/com/coderHub/commons2floor3/aws/s3/Bucket.java
+/Users/anthonylopez-aquino/git/commons2floor3/commons2floor3/src/main/java/com/coderHub/commons2floor3/service/PostService.java
+/Users/anthonylopez-aquino/git/commons2floor3/commons2floor3/src/main/java/com/coderHub/commons2floor3/models/request/PostRequestBody.java
+/Users/anthonylopez-aquino/git/commons2floor3/commons2floor3/src/main/java/com/coderHub/commons2floor3/service/S3Service.java
+/Users/anthonylopez-aquino/git/commons2floor3/commons2floor3/src/main/java/com/coderHub/commons2floor3/configuration/AmazonConfig.java

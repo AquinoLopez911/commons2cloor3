@@ -29,7 +29,7 @@ p {
     width: 100%;
 }
 
-/* every subject can have one class name and  */
+
 .about-us {
     border: 10px solid skyblue;
     border-radius: 15px;
@@ -41,16 +41,13 @@ p {
     height: 50vh;
     width: 30vw;
 }
+.about-us .img-container {
+    min-height: 60%;
+}
 
 img {
     width: 75%;
 }
-
-
-
-
-
-
 
 footer {
     background-color: gray;
@@ -65,4 +62,7 @@ footer .social {
 footer .top {
     float: right;
 }
+
+
+
 
