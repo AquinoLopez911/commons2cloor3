@@ -1,6 +1,4 @@
 /.metadata/
 <<<<<<< HEAD
-/commons2floor3/src/main/java/com/coderHub/commons2floor3/configuration/AmazonConfig.java
-=======
-/.pom.xml/
->>>>>>> c84c41dff0c5c08337c6570b218f7bd4a5a424ae
+commons2floor3/src/main/java/com/coderHub/commons2floor3/configuration/AmazonConfig.java
+
